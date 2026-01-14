@@ -1,0 +1,133 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title?: string;
+}
+
+const { title = "Jose Alvarez Dev" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3MSVLMEB86"
+		></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-3MSVLMEB86");
+		</script>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="/favicon.png?v=1" />
+		<link rel="icon" type="image/png" href="/favicon.png?v=1" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png?v=1"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="theme-color" content="#7c3aed" />
+
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- SEO Primario -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta
+			name="description"
+			content="Portfolio de Jose Alvarez Dev, Desarrollador Web Full Stack con más de 10 años de experiencia. Especializado en React, Astro, Node.js y soluciones de alto rendimiento."
+		/>
+		<meta
+			name="keywords"
+			content="Jose Alvarez Dev, Desarrollador Full Stack, React, Astro, Node.js, TypeScript, Swift, Kotlin, Portfolio, Programador Senior"
+		/>
+		<meta name="author" content="Jose Alvarez Dev" />
+		<link rel="canonical" href="https://josealvarezdev.web.app" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://josealvarezdev.web.app" />
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Explora el portfolio de Jose Alvarez Dev. Más de 10 años creando experiencias digitales excepcionales con tecnologías modernas."
+		/>
+		<meta
+			property="og:image"
+			content="https://josealvarezdev.web.app/og-image.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://josealvarezdev.web.app" />
+		<meta property="twitter:title" content={title} />
+		<meta
+			property="twitter:description"
+			content="Explora el portfolio de Jose Alvarez Dev. Especialista en React, Swift y desarrollo Full Stack."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://josealvarezdev.web.app/og-image.png"
+		/>
+
+		<!-- AI Crawlers Optimization -->
+		<meta
+			name="robots"
+			content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+		/>
+		<meta
+			name="ai-context"
+			content="Jose Alvarez Dev es un Desarrollador Senior Full Stack con 10+ años de experiencia. Experto en React, Node.js, Swift, Kotlin y AWS Lambda."
+		/>
+
+		<!-- JSON-LD Structured Data for AI & Search Engines -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Jose Alvarez Dev",
+				"url": "https://josealvarezdev.web.app",
+				"image": "https://josealvarezdev.web.app/images/profile.jpg",
+				"logo": "https://josealvarezdev.web.app/og-image.png",
+				"jobTitle": "Senior Full Stack Developer",
+				"description": "Desarrollador con más de 10 años de experiencia en el ecosistema JavaScript, aplicaciones móviles y arquitectura cloud.",
+				"sameAs": [
+					"https://github.com/JoseAlvarezDev",
+					"https://linkedin.com/in/josealvarezdev"
+				],
+				"knowsAbout": [
+					"React",
+					"Astro",
+					"Node.js",
+					"TypeScript",
+					"Swift",
+					"Kotlin",
+					"AWS Lambda",
+					"OSINT",
+					"API Design"
+				],
+				"email": "josealvarezdeveloper@gmail.com"
+			}
+		</script>
+	</head><body
+		class="bg-slate-950 text-white font-sans overflow-x-hidden selection:bg-purple-500 selection:text-white"
+	>
+		<div
+			class="fixed inset-0 -z-10 h-full w-full bg-slate-950 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+		>
+		</div>
+		<slot />
+	</body>
+</html>

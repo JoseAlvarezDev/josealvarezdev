@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.astro";
+import { projects } from "../data/projects";
+import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
+---
+
+<Layout title="Todos los Proyectos | Jose Alvarez Dev">
+	<Navbar client:load />
+
+	<main class="pt-32 pb-20">
+		<div class="container mx-auto px-6">
+			<div class="mb-12">
+				<a
+					href="/"
+					class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8 group"
+				>
+					<FaArrowLeft
+						className="group-hover:-translate-x-1 transition-transform"
+					/> Volver al Inicio
+				</a>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6">
+					Todos mis <span
+						class="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+						>Proyectos</span
+					>
+				</h1>
+				<p class="text-gray-400 text-lg max-w-2xl">
+					Explora mi trayectoria completa a través de mis desarrollos,
+					desde herramientas de sistema hasta aplicaciones web de
+					última generación.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{
+					projects.map((project) => (
+						<div class="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all duration-300 flex flex-col">
+							<div class="aspect-video overflow-hidden">
+								<img
+									src={project.image}
+									alt={project.title}
+									class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+
+							<div class="p-6 flex-grow flex flex-col">
+								<div class="flex flex-wrap gap-2 mb-4">
+									{project.tags.map((tag) => (
+										<span class="text-xs font-medium px-2 py-1 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/20">
+											{tag}
+										</span>
+									))}
+								</div>
+
+								<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
+									{project.title}
+								</h3>
+								<p class="text-gray-400 text-sm mb-6 line-clamp-3">
+									{project.description}
+								</p>
+
+								<div class="flex items-center gap-4 mt-auto">
+									<a
+										href={project.github}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="flex items-center gap-2 text-sm font-medium text-white hover:text-purple-400 transition-colors"
+									>
+										<FaGithub /> Código
+									</a>
+									<a
+										href={project.demo}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="flex items-center gap-2 text-sm font-medium text-white hover:text-purple-400 transition-colors"
+									>
+										<FaExternalLinkAlt /> Demo
+									</a>
+								</div>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</main>
+
+	<Footer />
+</Layout>
