@@ -32,11 +32,18 @@ const Projects = () => {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
                         >
-                            <div className="aspect-video overflow-hidden">
+                            <div className="aspect-video relative overflow-hidden bg-black/40">
+                                {/* Imagen de fondo desenfocada para rellenar */}
+                                <img
+                                    src={project.image}
+                                    alt=""
+                                    className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 scale-150"
+                                />
+                                {/* Imagen principal nítida */}
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                    className="relative z-10 w-full h-full object-contain p-4 transform group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
 

@@ -4,7 +4,7 @@
   <img src="https://josealvarezdev.web.app/favicon.png" width="100" alt="Jose Alvarez Dev Logo" />
 </p>
 
-### 🚀 Senior Full Stack Developer | 10+ Años de Experiencia
+### 🚀 Full Stack Developer | 10+ Años de Experiencia
 Me apasiona construir experiencias digitales de alto impacto, desde arquitecturas cloud escalables hasta interfaces web y móviles refinadas. Mi enfoque combina la precisión técnica con una estética moderna.
 
 ---

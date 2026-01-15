@@ -3,39 +3,39 @@ export const projects = [
         title: "Console LOL",
         description: "La extensión definitiva para VS Code que hace el debugging divertido. Inserta console.logs inteligentes con emojis aleatorios y etiquetas automáticas.",
         tags: ["TypeScript", "VS Code API", "Node.js"],
-        image: "https://raw.githubusercontent.com/JoseAlvarezDev/console-lol/main/demo.png",
+        image: "https://github.com/JoseAlvarezDev/console-lol/blob/main/icon.png?raw=true",
         github: "https://github.com/JoseAlvarezDev/console-lol",
-        demo: "https://marketplace.visualstudio.com/items?itemName=JoseAlvarezDev.console-lol"
+        demo: "https://marketplace.visualstudio.com/items?itemName=JoseAlvarezDev.fun-emoji-console-log"
     },
     {
         title: "Spectra OSINT",
         description: "Plataforma de inteligencia de fuentes abiertas (OSINT) avanzada. Rastreo de IP, teléfonos, correos y análisis de malware 100% en el cliente.",
         tags: ["JavaScript", "Security", "OSINT", "API"],
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://github.com/JoseAlvarezDev/Spectra-OSINT/blob/main/frontend/public/spectra-logo.png?raw=true",
         github: "https://github.com/JoseAlvarezDev/Spectra-OSINT",
-        demo: "https://spectra-osint.vercel.app"
+        demo: "https://josealvarezdev.github.io/Spectra-OSINT/"
     },
     {
         title: "Polymarket AI Assistant",
         description: "Asistente inteligente PWA para análisis de mercados de predicción. Sincroniza datos en tiempo real y ofrece insights mediante modelos de IA avanzados.",
         tags: ["Next.js", "AI", "PWA", "Tailwind"],
-        image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://github.com/JoseAlvarezDev/Polymarket_AI_Assistant/blob/main/public/logo.png?raw=true",
         github: "https://github.com/JoseAlvarezDev/Polymarket_AI_Assistant",
-        demo: "https://polymarket-ai.vercel.app"
+        demo: "https://josealvarezdev.github.io/Polymarket_AI_Assistant/"
     },
     {
         title: "TerraLens",
         description: "Visualizador terrestre inmersivo con rastreo de satélites en tiempo real. Combina MapLibre GL JS y satellite.js para una experiencia única.",
         tags: ["MapLibre", "Satellite.js", "Web Graphics"],
-        image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://raw.githubusercontent.com/JoseAlvarezDev/TerraLens/main/src/assets/img/satelite512px.png",
         github: "https://github.com/JoseAlvarezDev/TerraLens",
-        demo: "https://terralens.vercel.app"
+        demo: "https://josealvarezdev.github.io/TerraLens/"
     },
     {
         title: "Stickers Pro",
         description: "App premium de stickers animados para WhatsApp. Motor nativo en Rust para un rendimiento extremo y diseño Glassmorphism.",
         tags: ["Kotlin", "Rust", "Jetpack Compose", "JNI"],
-        image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://github.com/JoseAlvarezDev/stickers-pro/blob/main/logo.png?raw=true",
         github: "https://github.com/JoseAlvarezDev/stickers-pro",
         demo: "#"
     },
@@ -43,9 +43,9 @@ export const projects = [
         title: "F1 2026 Web",
         description: "Calendario ultra ligero de la Fórmula 1 para la temporada 2026. Cuenta atrás para sesiones, estados en vivo y diseño optimizado.",
         tags: ["React", "Vite", "Tailwind"],
-        image: "https://images.unsplash.com/photo-1599581096582-7773f738a16c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://github.com/JoseAlvarezDev/f1-2026-web/raw/main/public/logo.png",
         github: "https://github.com/JoseAlvarezDev/f1-2026-web",
-        demo: "https://f1-2026.vercel.app"
+        demo: "https://josealvarezdev.github.io/f1-2026-web/"
     },
     {
         title: "Stranger Things API",
