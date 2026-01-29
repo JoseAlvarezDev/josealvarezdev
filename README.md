@@ -37,8 +37,8 @@ Me apasiona construir experiencias digitales de alto impacto, desde arquitectura
 
 ### 📊 Mis Estadísticas
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JoseAlvarezDev&show_icons=true&theme=tokyonight&count_private=true" alt="Jose's Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoseAlvarezDev&layout=compact&theme=tokyonight&hide_langs=html,css" alt="Top Languages" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JoseAlvarezDev&show_icons=true&theme=tokyonight&count_private=true" alt="Jose's Stats" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JoseAlvarezDev&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" />
 </p>
 
 ---
