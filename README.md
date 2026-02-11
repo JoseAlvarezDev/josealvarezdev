@@ -47,6 +47,8 @@ Me apasiona construir experiencias digitales de alto impacto, desde arquitectura
 - 🔭 Actualmente trabajando en proyectos de alto rendimiento con **Astro y React**.
 - 🌱 Aprendiendo siempre sobre nuevas arquitecturas cloud y IA aplicada al desarrollo.
 - ⚡ Dato curioso: Creo firmemente que un buen diseño es tan importante como un código limpio.
+- 🖊️ A veces, escribo libros:
+    https://amzn.eu/d/0902of2T
 
 ---
 
